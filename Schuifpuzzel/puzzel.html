@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Puzzle</title>
+    <link rel="stylesheet" href="puzzel.css">
+</head>
+<body>
+    <a href="javascript:javascript:history.go(-1)"><img src="/images/stop.png" alt="" id="stop"></a>
+    <div class="container">
+        <div class="titelenuitleg">
+            <h1>Complete the Puzzle to Reveal a Beautiful World!</h1>
+            <p>Drag the pieces to the left tile to complete the puzzle</p>        
+        </div>
+        <div id="completion-message" class="hidden">
+            <h1>You've completed the puzzle and revealed a beautiful world!</h1>
+            <button class="hidden" id="next" onclick="window.location.href = '/Homescreens/homescreen2.html';">NEXT</button>
+        </div>
+        <div class="reference-image">
+            <img src="img/jungle.jpg" alt="Reference Image" id="reference-img">
+        </div>
+        <div id="game-area">
+            <div id="puzzle-board"></div>
+            <div id="pieces-board"></div>
+        </div>
+    </div>
+    <script src="puzzel.js"></script>
+</body>
+</html>

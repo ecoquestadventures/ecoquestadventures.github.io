@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a2718;
+    color: #c68309;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.titelenuitleg {
+    margin-top: 10%;
+    height: 150px;
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#puzzle-board, #pieces-board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#puzzle-board {
+    width: 450px;
+    height: 450px;
+    border: 2px solid #a39380;
+    background-color: #7e6343;
+    border-radius: 10px;
+}
+
+#pieces-board {
+    width: 450px;
+    height: 450px;
+    border: 2px solid #a39380;
+    background-color: #7e6343;
+    border-radius: 10px;
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#completion-message {
+    background-color: #7e6343;
+    padding: 10px 30px;
+    border: 2px solid #a39380;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.reference-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 2px solid #a39380;
+    background-color: #7e6343;
+}
+
+#reference-img {
+    width: 250px; 
+    height: auto;
+}
+
+#timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid #a39380;
+    background-color: #7e6343;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Rowdies;
+    color: white;
+}
+
+p {
+    color: #DDD4BE;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1 {
+    color: #C68309;
+    text-align: center;
+    text-shadow: 0px 10px 5.3px rgba(0, 0, 0, 0.40);
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: #7C4607;
+    font-family: Rowdies;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    paint-order: stroke fill;
+}
+
+button#next {
+    border-radius: 20px;
+    border: 4px solid #688E2B;
+    background: var(--green, linear-gradient(253deg, #6E9D22 -3.77%, #27370C 96.4%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #E5DDC9;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 30px;
+    transition: 0.8s;
+}
+  
+button#next:hover {
+    background: var(--green, linear-gradient(253deg, #27370C -3.77%, #27370C 96.4%));
+    cursor: pointer;
+}
+
+#stop {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+#stop:hover {
+    cursor: pointer;
+}
