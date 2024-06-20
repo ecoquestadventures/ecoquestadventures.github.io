@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="game8.css" rel="stylesheet">
+    <title>Bottle game</title>
+</head>
+<body>
+    <div id="info-bar">
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 0</div>
+        <div>Find all the hidden plastic bottles!</div>
+    </div>
+    <div id="background-box">
+        <div id="bottles"></div> <!-- Hier komen de flesjes binnen de box -->
+    </div>
+    <div id="overlay">
+        <div id="overlay-content">
+            <p id="sumQuestion"></p>
+            <input type="text" id="answer" />
+            <button onclick="checkAnswer()">Check answer</button>
+        </div>
+    </div>
+    <div id="game-over">
+        <p id="final-score"></p>
+    </div>
+    <script src="game8.js"></script>
+</body>
+</html>
