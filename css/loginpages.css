@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #E5DDC9;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("/images/homescreen-background.jpeg");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE OF WOOD */
+
+.wood-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+img#wood {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+img#small-image {
+    max-width: 60%;
+    max-height: 60%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/* CENTER DIV */
+
+.center-box {
+    display: flex;
+    width: 702px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    color: #DDD4BE;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1 {
+    color: #C68309;
+    text-align: center;
+    text-shadow: 0px 10px 5.3px rgba(0, 0, 0, 0.40);
+    -webkit-text-stroke-width: 16px;
+    -webkit-text-stroke-color: #7C4607;
+    font-family: Rowdies;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    paint-order: stroke fill;
+}
+
+/* INPUT SECTION */
+
+.input-fields input {
+    display: block;
+    border-radius: 20px;
+    border: 4px solid #DFDDD5;
+    background: linear-gradient(230deg, #E5DDC9 0%, #AB9A7A 127.45%);
+    width: 380px;
+    height: 60px;
+    padding: 18px;
+    margin-bottom: 16px;
+    color: #1A2718;
+    font-family: Rowdies;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+}
+
+.input-fields input::placeholder {
+    color: #1A2718;
+    font-family: Rowdies;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* BUTTONS SECTION */
+
+.buttons {
+    display: flex;
+    gap: 18px;
+    padding: 0px 76px;
+    justify-content: center;
+}
+
+button#back {
+    border-radius: 20px;
+    border: 4px solid #C6382F;
+    background: var(--red, linear-gradient(266deg, #B3271E 1.5%, #5C1919 99.35%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #E5DDC9;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 30px;
+    transition: 0.8s;
+}
+
+button#back:hover {
+    background: var(--red, linear-gradient(266deg, #5C1919 1.5%, #5C1919 99.35%));
+    cursor: pointer;
+}
+
+button#next {
+    border-radius: 20px;
+    border: 4px solid #688E2B;
+    background: var(--green, linear-gradient(253deg, #6E9D22 -3.77%, #27370C 96.4%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #E5DDC9;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 30px;
+    transition: 0.8s;
+}
+
+button#next:hover {
+    background: var(--green, linear-gradient(253deg, #27370C -3.77%, #27370C 96.4%));
+    cursor: pointer;
+}
+
+/* options */
+
+img.options-small {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+img.options-small:hover {
+    cursor: pointer;
+}
+
+#teacher{
+    display: flex;
+    width: 307px;
+    height: 96px;
+    padding: 10px 10px 10px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 6px solid #DFDDD5;
+    background: var(--bg, linear-gradient(210deg, #a18e5d 6.33%, #AB9A7A 96.06%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #1A2718;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#student {
+    display: flex;
+    width: 307px;
+    height: 96px;
+    padding: 10px 10px 10px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 6px solid #DFDDD5;
+    background: var(--bg, linear-gradient(210deg, #a18e5d 6.33%, #AB9A7A 96.06%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #1A2718;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#student:hover, #teacher:hover {
+    cursor: pointer;
+}
+
+#flyingbee {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+#ladybug {
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 30%;
+    left: 0%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.overlay .popup {
+    display: flex;
+    width: 613px;
+    height: 353px;
+    padding: 10px 10px 10px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 10px solid #DFDDD5;
+    background: linear-gradient(210deg, #E5DDC9 6.33%, #AB9A7A 96.06%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #1A2718;
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.overlay .popup .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#ready {
+    cursor: pointer;
+}
